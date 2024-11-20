@@ -13,6 +13,13 @@ pluginManagement {
         }
         gradlePluginPortal()
     }
+    plugins {
+        id 'org.jetbrains.kotlin.jvm' version '2.0.21'
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
 }
 
 dependencyResolutionManagement {
@@ -58,7 +65,7 @@ dependencyResolutionManagement {
         def parchmentVersion = "2023.09.03" // https://parchmentmc.org/docs/getting-started
         def shadowVersion = "7.1.2"
         def spotlessVersion = "6.25.0"
-        def modDevGradleVersion = "2.0.61-beta-pr-118-legacy"
+        def modDevGradleVersion = "2.0.63-beta-pr-118-legacy"
         def vineFlowerVersion = "1.+"
         def macheteVersion = "1.+"
         def configurationVersion = "2.2.0"
